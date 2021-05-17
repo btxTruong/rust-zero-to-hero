@@ -30,3 +30,7 @@ jobs:
       run: cargo clippy -- -D warnings
     - name: formating
       run: cargo fmt -- --check
+    - name: install audit
+      run: cargo install cargo-audit
+    - name: audit
+      run: cargo audit
